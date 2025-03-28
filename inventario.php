@@ -14,7 +14,7 @@ $collection = $database->personaggi;
     $all = $collection->find(); 
     foreach($all as $doc){
        $data = $doc->getArrayCopy(); 
-       echo 'id_eroe'. $data['_id'] .'<br>'; 
+       echo 'id_eroe: '. $data['_id'] .'<br>'; 
        echo 'nome: ' . $data['nome'] .'<br>' ; 
        echo 'razza: '. $data['razza'] .'<br>';
        echo 'classe: '. $data['classe'].'<br>';
@@ -23,7 +23,7 @@ $collection = $database->personaggi;
        echo 'inventario: '. $data['inventario'].'<br>';
        echo 'punti esperienza: '. $data['punti_esperienza'].'<br>';
        echo 'E in vita? '. $data['vivo'].'<br>';
-       echo 'missioni completate:'. $data['missioni_completate'].'<br>';
+       echo 'missioni completate:'. $data['missioni_completate'].'<br><br><br>';
         
     }
 
