@@ -54,7 +54,7 @@ $collection = $database->personaggi;
         
             } 
         }
-        else if($_POST['livello'] <> ""){
+        if($_POST['livello'] <> ""){
             echo "Eroi di livello: " . $_POST['livello'] . '<br>'; 
             $livello = $collection->find(['livello' => $_POST['livello'] ]); 
             foreach($livello as $doc){
